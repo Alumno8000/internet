@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="es" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>INTERNET</title>
+<style type="text/css">
+.style3 { color: #FFFFFF; font-family: Verdana; }
+.style4 { font-family: Verdana; }
+.style6 { border-style: solid; border-color: #000000; text-align: left; 
+color: #FFFFFF; font-family: Verdana; font-size: xx-large; background-color: #000000; }
+.style7 { vertical-align: bottom; margin-left: 0px; margin-top: 14px; margin-bottom: 0px; margin-right: 64px; }
+.style8 { font-family: Verdana; font-size: large; }
+.style14 { font-family: Symbol; text-align: center; font-size: x-large; }
+.style15 { font-size: xx-large; }
+.style16 { font-family: Symbol; text-align: center; font-size: xx-large; }
+.style17 { text-align: center; }
+.style20 {
+	color: #000000;
+	font-size: larger;
+	background-color: #FFFFFF;
+}
+.style22 {
+	color: #000000;
+	font-size: larger;
+	background-color: #000000;
+}
+.style12 {
+	background-color: #000000;
+	font-size: x-small;
+	text-decoration: underline;
+}
+.style23 {
+	font-family: Verdana;
+	font-size: xx-small;
+}
+.style24 {
+	font-family: Verdana;
+	font-size: x-small;
+	background-color: #000000;
+}
+.style25 {
+	font-family: Verdana;
+	font-size: x-small;
+	text-decoration: underline;
+	background-color: #000000;
+}
+.style27 {
+	background-color: #00FFFF;
+}
+.style28 {
+	color: #000000;
+}
+</style>
+<script type="text/javascript">
+// Funciones de botones
+function FP_swapImg() {
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); 
+ for(n=2;n<args.length;n+=2){
+  elm=FP_getObjectByID(args[n]); 
+  if(elm){ doc.$imgSwaps[doc.$imgSwaps.length]=elm; elm.$src=elm.src; elm.src=args[n+1]; }
+ }
+}
+function FP_getObjectByID(id,o){
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return el; if(o.childNodes)c=o.childNodes; if(c)
+  for(n=0;n<c.length;n++){ el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0;n<f.length;n++){ els=f[n].elements;
+  for(m=0;m<els.length;m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+</script>
+</head>
+
+<body style="color: #FFFFFF; background-color: #000000;" 
+      onload="FP_preloadImgs(/*url*/'buttonA1.gif',/*url*/'buttonB1.gif')">
+
+<!-- Tabla principal con botones e imagen -->
+<table style="width: 559px; height: 192px" align="center">
+  <tr>
+    <td colspan="6" class="style6" style="width: 1600px; height: 1px;">
+      &nbsp;
+				<span class="style12">PINCHA</span><span class="style25"> </span>
+				<span class="style24"><a href="trabajo.doc">AQUI</a></span><span class="style25">
+				</span><span class="style12">PARA DESCARGAR EL TRABAJO ORIGINAL</span><span class="style23">&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<strong><span class="style22">&nbsp;</span><span class="style20">INTERNET</span></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="forosecreto.htm">
+		<img style="border: 0" id="img4" src="button10.gif" height="20" width="100" alt="Foro" onmouseover="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonA1.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img4',/*url*/'button10.gif')" onmousedown="FP_swapImg(1,0,/*id*/'img4',/*url*/'buttonB1.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img4',/*url*/'buttonA1.gif')" /><!-- MSComment="ibutton" fp-style="fp-btn: Embossed Capsule 1; fp-transparent: 1" fp-title="Foro" --></a>&nbsp;&nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="9" class="style3" style="width: 144px">
+      <img alt="internet" src="imagenes/portaa.jpg" class="style7" width="906" height="501" style="float: left" /><table style="width: 47%">
+  <tr>
+    <td class="style17" style="width: 112px"><span class="style27">
+	<span class="style28">FECHA:</span></span></td>
+    <td id="fecha">&nbsp;</td>
+    <td style="width: 111px" class="style17"><span class="style27">
+	<span class="style28">VISITAS:</span></span></td>
+    <td id="contador">0</td>
+    <td id="contador">&nbsp;</td>
+  </tr>
+</table>
+
+&nbsp;</td>
+    <td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">
+	&nbsp;</td><td class="style4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="style8">
+      <a href="pagina2.htm">
+        <img style="border: 0" id="img1" src="button5.jpg" height="50" width="250" alt="CONCEPTOS BÁSICOS DE INTERNET"
+        onmouseover="FP_swapImg(1,0,'img1','button6.jpg')"
+        onmouseout="FP_swapImg(0,0,'img1','button5.jpg')"
+        onmousedown="FP_swapImg(1,0,'img1','button7.jpg')"
+        onmouseup="FP_swapImg(0,0,'img1','button6.jpg')" />
+      </a>
+    </td>
+    <td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">
+	&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="style14" rowspan="2">&nbsp;<strong><span class="style15">¯</span></strong></td>
+    <td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">
+	&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="style4">
+      <a href="pagina9.htm">
+        <img style="border: 0" id="img2" src="button11.jpg" height="50" width="250" alt="COMPONENETES Y TECNOLOGÍA"
+        onmouseover="FP_swapImg(1,0,'img2','button12.jpg')"
+        onmouseout="FP_swapImg(0,0,'img2','button11.jpg')"
+        onmousedown="FP_swapImg(1,0,'img2','button13.jpg')"
+        onmouseup="FP_swapImg(0,0,'img2','button12.jpg')" />
+      </a>
+    </td>
+    <td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">
+	&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="style16" rowspan="2"><strong>¯</strong></td>
+    <td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">
+	&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="style4"></td><td class="style4"></td><td class="style4"></td><td class="style4"></td>
+  </tr>
+  <tr>
+    <td class="style4">
+      <a href="pagina15.htm">
+        <img style="border: 0" id="img3" src="button1D.jpg" height="50" width="250" alt="SEGURIDAD Y PRIVAVIDAD"
+        onmouseover="FP_swapImg(1,0,'img3','button1E.jpg')"
+        onmouseout="FP_swapImg(0,0,'img3','button1D.jpg')"
+        onmousedown="FP_swapImg(1,0,'img3','button1F.jpg')"
+        onmouseup="FP_swapImg(0,0,'img3','button1E.jpg')" />
+      </a>
+    </td>
+    <td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">&nbsp;</td><td class="style4">
+	&nbsp;</td>
+  </tr>
+</table>
+
+<!-- Tabla de FECHA / VISITAS -->
+
+<!-- Script contador y fecha/hora -->
+<script>
+window.onload = function() {
+  // Contador de visitas
+  if(localStorage.visitas){
+    localStorage.visitas = Number(localStorage.visitas) + 1;
+  } else {
+    localStorage.visitas = 1;
+  }
+  document.getElementById("contador").innerText = localStorage.visitas;
+
+  // Fecha y hora actual
+  let ahora = new Date();
+  let dia = String(ahora.getDate()).padStart(2,'0');
+  let mes = String(ahora.getMonth()+1).padStart(2,'0');
+  let anio = ahora.getFullYear();
+  let hora = String(ahora.getHours()).padStart(2,'0');
+  let minutos = String(ahora.getMinutes()).padStart(2,'0');
+  document.getElementById("fecha").innerText = `${dia}/${mes}/${anio} ${hora}:${minutos}`;
+};
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="es" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>INTERNET</title>
+
+<style type="text/css">
+.style6 {
+	border-style: solid;
+	border-color: #000000;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: Verdana;
+	font-size: xx-large;
+	background-color: #000000;
+}
+p.MsoNormal {
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+}
+.style9 { color: #000000; }
+.style11 { font-family: Verdana; text-align: center; }
+.style12 { font-family: Verdana; text-align: left; }
+.style16 { text-align: center; }
+.style17 { margin-bottom: 0px; }
+.style18 { text-align: justify; }
+
+/* ===== MENU DESPLEGABLE SIMPLE ===== */
+.menu-select {
+	font-family: Verdana;
+	font-size: 11pt;
+	color: #FFFFFF;
+	margin: 10px 0;
+	text-align: center;
+}
+.menu-select select {
+	font-family: Verdana;
+	font-size: 10pt;
+	padding: 4px;
+}
+.style19 {
+	background-color: #FFFFFF;
+}
+
+/* Ocultar secciones por defecto */
+#tarjeta-section, #modem-section {
+	display: none;
+}
+.style20 {
+	text-decoration: none;
+}
+</style>
+
+<script type="text/javascript">
+function FP_preloadImgs() {
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+// Función para mostrar la sección correspondiente
+function mostrarSeccion(valor) {
+    var tarjeta = document.getElementById("tarjeta-section");
+    var modem = document.getElementById("modem-section");
+
+    if(valor === "tarjeta") {
+        tarjeta.style.display = "block";
+        modem.style.display = "none";
+    } else if(valor === "modem") {
+        tarjeta.style.display = "none";
+        modem.style.display = "block";
+    } else {
+        tarjeta.style.display = "none";
+        modem.style.display = "none";
+    }
+}
+</script>
+</head>
+
+<body style="color:#FFFFFF; background-color:#000000;"
+onload="FP_preloadImgs('button27.gif','button28.gif','buttonB.gif','buttonC.gif')">
+
+<table style="width:1300px; height:598px" align="center" class="style17">
+
+<!-- CABECERA CON BOTONES -->
+<tr>
+<td class="style6" colspan="2" style="height:52px;">
+<a href="index.htm" class="style20">
+<span class="style19">
+<img style="border:0" id="img3" src="buttonA.gif" height="30" width="150" alt="PÁGINA PRINCIPAL" />
+</span></a>
+<span class="style9"><span class="style19"><strong>TARJETA DE RED Y MÓDEM </strong></span></span>
+<a href="pagina10.htm">
+<span class="style19">
+<img style="border:0" id="img2" src="button26.gif" height="30" width="150" alt="SIGUIENTE PÁGINA" />
+</span>
+</a>
+</td>
+</tr>
+
+<!-- MENU DESPLEGABLE -->
+<tr>
+<td colspan="2" class="menu-select">
+<select onchange="mostrarSeccion(this.value);" name="D1">
+	<option value="">Selecciona…</option>
+	<option value="tarjeta">Tarjeta de red</option>
+	<option value="modem">Módem</option>
+</select>
+</td>
+</tr>
+
+<!-- SECCIONES DE CONTENIDO -->
+<tr>
+<!-- COLUMNA IZQUIERDA: TARJETA -->
+<td class="style12" style="width:666px" id="tarjeta-section">
+<table style="width:97%; height:490px">
+<tr>
+<td class="style16">
+<br /><br />
+<img src="imagenes/tarjetared.jpg" width="477" height="285" alt="Tarjeta de red" />
+<br /><br />
+</td>
+</tr>
+<tr>
+<td class="style16">
+<p class="style18">
+Una tarjeta de red es un dispositivo que se instala en el interior de un
+ordenador para que este pueda conectarse a Internet. Según el tipo de tarjeta, esta puede incluir en su parte posterior un puerto para introducir el cable de Ethernet o admitir la conexión inalámbrica.
+</p>
+</td>
+</tr>
+</table>
+</td>
+
+<!-- COLUMNA DERECHA: MODEM -->
+<td class="style11" id="modem-section">
+<table style="width:631px; height:495px">
+<tr>
+<td>
+<br />
+<img src="imagenes/modem.jpg" width="415" height="300" alt="Módem" />
+</td>
+</tr>
+<tr>
+<td>
+<p class="style18">
+Un módem conecta los dispositivos a Internet interpretando señales del
+proveedor de servicios de Internet (ISP). Normalmente estas señales se envían a través de cables coaxiales o líneas telefónicas.
+</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>
